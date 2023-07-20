@@ -1,0 +1,38 @@
+.bg {
+  background-image: linear-gradient(
+    to top,
+    #a364fb,
+    #b68eff,
+    #cbb5ff,
+    #e3daff,
+    #ffffff
+  );
+}
+.overall-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.field-label {
+  text-align: left !important;
+}
+.custom-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.test-color {
+  background-color: bisque;
+}
+.label {
+  width: 150px;
+}
+.student-hidden {
+  display: none;
+}
+.employee-hidden {
+  display: none;
+}
+.entrepreneur-hidden {
+  display: none;
+}

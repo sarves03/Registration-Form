@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./registrationForm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="container overall-container">
+        <form action="#" id="form">
+          <div class="card">
+            <div class="container">
+              <div
+                class="notification has-background-dark has-text-primary-light has-text-centered is-size-5"
+              >
+                EVENT REGISTRATION FORM
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label"
+                    >User Name <span class="has-text-danger">*</span></label
+                  >
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input
+                        title="First Name"
+                        class="input"
+                        type="text"
+                        placeholder="First Name"
+                        required
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input
+                        title="Last Name"
+                        class="input"
+                        type="text"
+                        placeholder="Last name"
+                        required
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label"
+                    >Email <span class="has-text-danger">*</span></label
+                  >
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input
+                        title="Email"
+                        class="input"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      />
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label"
+                    >Mobile No <span class="has-text-danger">*</span></label
+                  >
+                </div>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <a class="button is-static"> +91 </a>
+                      </p>
+                      <p class="control is-expanded">
+                        <input
+                          title="Mobile No"
+                          class="input"
+                          type="tel"
+                          placeholder="Your phone number"
+                          required
+                        />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label"
+                    >Date Of Birth <span class="has-text-danger">*</span></label
+                  >
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <input
+                          title="DOB"
+                          class="input"
+                          type="date"
+                          placeholder="Institute Name"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label"
+                    >Designation <span class="has-text-danger">*</span></label
+                  >
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select
+                          title="Designation"
+                          name="plan"
+                          id="plan"
+                          required
+                        >
+                          <option value="none" selected disabled hidden>
+                            Select an Option
+                          </option>
+                          <option id="student" value="student">Student</option>
+                          <option id="employee" value="employee">
+                            Working Professional
+                          </option>
+                          <option id="entrepreneur" value="entrepreneur">
+                            Entrepreneur
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="student-hidden" id="student-hidden">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Institution Name</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Institution Name"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-university" aria-hidden="true"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Degree </label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select name="plan" id="plan">
+                            <option value="none" selected disabled hidden>
+                              Select an Option
+                            </option>
+                            <option>Engineering</option>
+                            <option>Arts</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Department</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Department Name"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa-solid fa-building"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Current Year </label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select name="plan" id="plan">
+                            <option value="none" selected disabled hidden>
+                              Select an Option
+                            </option>
+                            <option>1st year</option>
+                            <option>2nd year</option>
+                            <option>3rd year</option>
+                            <option>4th year</option>
+                            <option>final year</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="employee-hidden" id="employee-hidden">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Company Name</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Company Name"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-university" aria-hidden="true"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Job Role</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Department Name"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa-solid fa-building"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Year Of Experience</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <div class="is-fullwidth">
+                          <input
+                            class="input"
+                            type="number"
+                            placeholder="Experience"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="entrepreneur-hidden" id="entrepreneur-hidden">
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Firm Name</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Firm Name"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-university" aria-hidden="true"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Designation</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Designation"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-level-up" aria-hidden="true"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Sector</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control is-expanded has-icons-left">
+                        <div class="is-fullwidth">
+                          <input
+                            class="input"
+                            type="text"
+                            placeholder="Sector"
+                          />
+                          <span class="icon is-small is-left">
+                            <i class="fa fa-industry" aria-hidden="true"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="columns m-2 is-centered">
+                <div class="control is-flex">
+                  <input type="checkbox" required />
+                  <label
+                    title="Terms & Conditions"
+                    class="checkbox custom-font is-size-7 ml-2"
+                  >
+                    I agree to the
+                    <a href="#" class="custom-font">Terms & Conditions</a>
+                  </label>
+                </div>
+              </div>
+              <div class="m-2">
+                <div class="field has-text-centered">
+                  <div class="control">
+                    <button
+                      class="button is-link custom-font"
+                      style="background-color: #a364fb"
+                      title="submit"
+                    >
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./registrationForm.js"></script>
+  </body>
+</html>
